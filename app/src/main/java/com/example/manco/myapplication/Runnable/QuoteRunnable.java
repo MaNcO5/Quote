@@ -5,6 +5,7 @@ import android.widget.TextView;
 import com.example.manco.myapplication.Entity.Quote;
 import com.example.manco.myapplication.HttpController.CustomRunnable;
 import com.example.manco.myapplication.TextUtils.TextViewSpan;
+
 /**
  * Created by Marjan, Tim, Robin, Khaled on 2016-10-17.
  */

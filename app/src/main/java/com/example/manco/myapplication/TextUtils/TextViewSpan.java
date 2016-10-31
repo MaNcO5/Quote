@@ -34,7 +34,7 @@ public class TextViewSpan {
             @Override
             public void onGlobalLayout() {
 
-                tv.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+                //tv.getViewTreeObserver().removeOnGlobalLayoutListener(this);
 
                 Layout layout = tv.getLayout();
                 int x = 0;

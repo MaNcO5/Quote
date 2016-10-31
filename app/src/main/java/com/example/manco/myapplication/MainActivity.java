@@ -19,8 +19,7 @@ import com.example.manco.myapplication.Weather.WeatherFragment;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
-import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
-import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
+
 /**
  * Created by Marjan, Tim, Robin, Khaled on 2016-10-17.
  */
@@ -40,13 +39,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
 
-        CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()
-                .setDefaultFontPath("fonts/kelson.otf")
-                .setFontAttrId(R.attr.fontPath)
-                .build()
-        );
-
-
         //....
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
@@ -60,8 +52,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-        //}
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
                     .add(R.id.root, new WeatherFragment())
@@ -71,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void attachBaseContext(Context newBase) {
-        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
+        super.attachBaseContext(newBase);
     }
         @Override
         public boolean onCreateOptionsMenu (Menu menu){
