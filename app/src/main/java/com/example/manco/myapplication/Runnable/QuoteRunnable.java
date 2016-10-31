@@ -5,7 +5,9 @@ import android.widget.TextView;
 import com.example.manco.myapplication.Entity.Quote;
 import com.example.manco.myapplication.HttpController.CustomRunnable;
 import com.example.manco.myapplication.TextUtils.TextViewSpan;
-
+/**
+ * Created by Marjan, Tim, Robin, Khaled on 2016-10-17.
+ */
 
 public class QuoteRunnable extends CustomRunnable{
     private TextView authorTextView, quoteTextView;
@@ -22,5 +24,7 @@ public class QuoteRunnable extends CustomRunnable{
         authorTextView.setText(author);
         //quoteTextView.setText(quote);
         TextViewSpan.work(quoteTextView, quote, -1);
+
+        System.out.println(author + quote);
     }
 }

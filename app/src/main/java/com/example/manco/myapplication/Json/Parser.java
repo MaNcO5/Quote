@@ -2,7 +2,9 @@ package com.example.manco.myapplication.Json;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-
+/**
+ * Created by Marjan, Tim, Robin, Khaled on 2016-10-17.
+ */
 
 public class Parser<T> {
     final Class<T> typeParameterClass;

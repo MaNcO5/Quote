@@ -11,7 +11,7 @@ import android.view.ViewTreeObserver;
 import android.widget.TextView;
 
 /**
- * Created by chrisyu on 15/12/22.
+ * Created by Marjan, Tim, Robin, Khaled on 2016-10-17.
  */
 public class TextViewSpan {
     public static void work(final TextView textview, String string, int color) {
